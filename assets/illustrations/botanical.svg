@@ -9,8 +9,8 @@
       <stop offset="100%" stop-color="#efd7a0"/>
     </linearGradient>
     <linearGradient id="sage" x1="0" x2="1">
-      <stop offset="0%" stop-color="#dfe8d5"/>
-      <stop offset="100%" stop-color="#a4b39d"/>
+      <stop offset="0%" stop-color="#d7e5df"/>
+      <stop offset="100%" stop-color="#8daea4"/>
     </linearGradient>
   </defs>
   <g fill="none" stroke="url(#gold)" stroke-width="4" stroke-linecap="round">

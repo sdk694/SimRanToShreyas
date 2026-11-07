@@ -9,13 +9,25 @@ h2,
 h3,
 h4,
 .screen-title,
-.invocation,
 .section-ribbon,
 .day-title,
 .save-date-dates {
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
   letter-spacing: 0.02em;
+}
+
+.invocation {
+  font-family: "Noto Serif Devanagari", serif;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.names-block,
+.event-date,
+.day-title,
+.save-date-dates {
+  color: var(--antique-gold);
 }
 
 .invocation,

@@ -9,13 +9,13 @@
       <stop offset="100%" stop-color="#f0d79e"/>
     </linearGradient>
     <linearGradient id="green" x1="0" x2="1">
-      <stop offset="0%" stop-color="#dfe9d0"/>
-      <stop offset="100%" stop-color="#7f9276"/>
+      <stop offset="0%" stop-color="#d7e5df"/>
+      <stop offset="100%" stop-color="#6f9c92"/>
     </linearGradient>
   </defs>
   <rect width="900" height="600" fill="#f6f0e5"/>
   <path d="M0 420C140 385 180 368 290 380C380 390 445 430 528 440C650 454 770 420 900 385V600H0Z" fill="url(#green)"/>
-  <path d="M0 470C120 453 210 446 300 462C405 480 525 506 680 480C760 468 832 453 900 436V600H0Z" fill="#a3b299" opacity="0.9"/>
+  <path d="M0 470C120 453 210 446 300 462C405 480 525 506 680 480C760 468 832 453 900 436V600H0Z" fill="#9abbb1" opacity="0.9"/>
   <g fill="none" stroke="url(#gold)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
     <path d="M215 440L270 290L340 440"/>
     <path d="M580 440L640 280L715 440"/>
