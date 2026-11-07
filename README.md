@@ -54,7 +54,7 @@ Update event names, times, and day-specific content in:
 2. Open the repository settings.
 3. Navigate to Pages.
 4. Set the source to GitHub Actions.
-5. The included workflow will publish automatically on pushes to `main`.
+5. The included workflow will publish automatically on pushes to `main` or `master`.
 
 ## Deployment using GitHub Actions
 
