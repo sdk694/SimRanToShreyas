@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Mandap Illustration</title>
+  <desc id="desc">Decorative mandap arch inspired by wedding ceremonies.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f7e6b9"/>
+      <stop offset="32%" stop-color="#d7b474"/>
+      <stop offset="70%" stop-color="#b98548"/>
+      <stop offset="100%" stop-color="#f5d79f"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" x2="1">
+      <stop offset="0%" stop-color="#d9e4cc"/>
+      <stop offset="100%" stop-color="#7a8d6e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="transparent"/>
+  <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M145 410V245C145 170 206 124 266 124C325 124 391 170 391 245V410"/>
+    <path d="M410 410V245C410 170 471 124 531 124C591 124 655 170 655 245V410"/>
+    <path d="M218 177C260 146 311 124 398 124C488 124 536 142 582 177"/>
+    <path d="M270 410H528"/>
+    <path d="M195 245H596"/>
+  </g>
+  <g fill="url(#green)">
+    <path d="M185 265c15-18 36-28 59-29-13 29-19 53-17 80-35-8-48-27-42-51z"/>
+    <path d="M616 264c-15-18-35-27-58-28 12 29 17 53 15 79 35-8 49-27 43-51z"/>
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+body {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+h1,
+h2,
+h3,
+h4,
+.screen-title,
+.invocation,
+.section-ribbon,
+.day-title,
+.save-date-dates {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.invocation,
+.ganesha-subtitle,
+.names-block,
+.event-date,
+.save-date-dates,
+.section-heading,
+.day-title,
+.venue-copy h3 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+:lang(hi),
+:lang(mr),
+.hi,
+.mr {
+  font-family: "Noto Serif Devanagari", serif;
+}
+
+p,
+button,
+a,
+span,
+li {
+  font-family: inherit;
+}
+
+.screen-title,
+.invocation,
+.names-block,
+.day-title,
+.save-date-dates {
+  color: var(--charcoal);
+}
+
+.invite-line,
+.invite-copy,
+.day-location,
+.event-item p,
+.address,
+.message-line,
+.event-venue,
+.save-date-venue {
+  font-size: 1.05rem;
+}
+
+.section-heading,
+.section-ribbon,
+.day-tag,
+.label,
+.save-date-title,
+.save-date-names {
+  text-transform: uppercase;
+}

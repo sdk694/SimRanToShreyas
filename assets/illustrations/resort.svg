@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Resort and Wedding Venue Illustration</title>
+  <desc id="desc">Garden venue painting with lawns, floral arches, and banquet hall.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f6e7bf"/>
+      <stop offset="30%" stop-color="#d7b373"/>
+      <stop offset="65%" stop-color="#b78344"/>
+      <stop offset="100%" stop-color="#f0d79e"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" x2="1">
+      <stop offset="0%" stop-color="#dfe9d0"/>
+      <stop offset="100%" stop-color="#7f9276"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="#f6f0e5"/>
+  <path d="M0 420C140 385 180 368 290 380C380 390 445 430 528 440C650 454 770 420 900 385V600H0Z" fill="url(#green)"/>
+  <path d="M0 470C120 453 210 446 300 462C405 480 525 506 680 480C760 468 832 453 900 436V600H0Z" fill="#a3b299" opacity="0.9"/>
+  <g fill="none" stroke="url(#gold)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M215 440L270 290L340 440"/>
+    <path d="M580 440L640 280L715 440"/>
+    <path d="M325 442H595"/>
+    <path d="M638 360H760"/>
+  </g>
+  <g fill="rgba(255,255,255,0.38)" stroke="url(#gold)" stroke-width="4">
+    <rect x="332" y="238" width="240" height="170" rx="12"/>
+    <path d="M392 260L450 175L512 260"/>
+    <path d="M352 338H550"/>
+  </g>
+  <g fill="url(#green)" stroke="url(#gold)" stroke-width="2">
+    <path d="M160 390c-28-22-51-17-74 7 15 18 35 25 62 32 5-14 9-26 12-39z"/>
+    <path d="M730 390c20-22 49-25 74-7-15 18-34 26-62 33-5-14-8-25-12-26z"/>
+  </g>
+  <g fill="url(#gold)">
+    <circle cx="174" cy="402" r="5"/>
+    <circle cx="220" cy="384" r="4"/>
+    <circle cx="714" cy="401" r="5"/>
+    <circle cx="668" cy="387" r="4"/>
+  </g>
+</svg>

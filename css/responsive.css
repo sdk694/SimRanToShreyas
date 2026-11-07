@@ -1,0 +1,86 @@
+@media (min-width: 720px) {
+  .site-shell {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .venue-card {
+    grid-template-columns: 1.2fr 1fr;
+  }
+
+  .language-picker {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .names-block {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+  }
+}
+
+@media (max-width: 719px) {
+  .top-bar {
+    padding-top: 0.6rem;
+  }
+
+  .brand-mini {
+    width: 52px;
+  }
+
+  .language-switcher {
+    gap: 0.2rem;
+  }
+
+  .switch-btn {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .hero-section,
+  .identity-section,
+  .invitation-section,
+  .celebrations-section,
+  .venue-section,
+  .message-section,
+  .save-date-section {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .day-meta,
+  .event-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .names-block {
+    display: block;
+  }
+
+  .language-card {
+    padding: 2rem 1.2rem 1.5rem;
+  }
+
+  .screen-title {
+    font-size: clamp(2.2rem, 10vw, 3rem);
+  }
+
+  .invocation {
+    font-size: clamp(2.5rem, 15vw, 4rem);
+  }
+}
+
+@media (max-width: 420px) {
+  .site-shell {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  .event-item {
+    padding: 0.8rem 0.9rem;
+  }
+
+  .maps-button {
+    width: 100%;
+  }
+}

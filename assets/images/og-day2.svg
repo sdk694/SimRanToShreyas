@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1"><stop offset="0" stop-color="#faf8f1"/><stop offset="1" stop-color="#f1eadb"/></linearGradient>
+    <linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#f5e7c2"/><stop offset="0.3" stop-color="#d3b779"/><stop offset="0.72" stop-color="#be8d47"/><stop offset="1" stop-color="#f3db9b"/></linearGradient>
+    <linearGradient id="sage" x1="0" x2="1"><stop offset="0" stop-color="#dfe6db"/><stop offset="1" stop-color="#8ea286"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="30" y="30" width="1140" height="570" rx="28" fill="none" stroke="#c5a46d" stroke-width="2" opacity="0.8"/>
+  <g transform="translate(60 120)">
+    <g fill="none" stroke="url(#gold)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M112 94c24 5 41 16 53 32 17 23 14 58-11 81-38 36-88 57-102 112-12 49 21 89 75 110 49 19 116 12 151-32 35-44 29-109-13-146" stroke-width="14"/>
+      <path d="M176 70c16 0 60 25 71 65 9 34-18 73-61 82-38 8-72-11-81-47-11-38 15-79 71-100z" stroke-width="11"/>
+      <path d="M108 234c42 4 63 34 71 70" stroke-width="11"/>
+      <path d="M248 102c25 17 42 37 48 68 7 38-10 71-42 96" stroke-width="11"/>
+      <path d="M224 188c8 13 13 28 25 46 21 38 49 58 81 64" stroke-width="11"/>
+    </g>
+    <g fill="url(#sage)" stroke="url(#gold)" stroke-width="3">
+      <path d="M292 116c-21-14-47-12-67 6 13 18 24 25 45 31 12-15 17-24 22-37z"/>
+      <path d="M79 164c-16-22-38-30-61-27 14 22 25 37 45 50 12-8 15-15 16-23z"/>
+      <path d="M294 272c-20-13-41-10-60 7 13 20 26 32 54 36 7-12 8-24 6-43z"/>
+    </g>
+  </g>
+  <text x="500" y="250" font-family="Georgia, serif" font-size="60" fill="#393a34">Shreyas &amp; Simran</text>
+  <text x="500" y="335" font-family="Arial, sans-serif" font-size="28" fill="#596b51">Wedding Invitation | 2 February 2027</text>
+  <text x="500" y="460" font-family="Georgia, serif" font-size="54" fill="#a98549">2 February 2027</text>
+</svg>
