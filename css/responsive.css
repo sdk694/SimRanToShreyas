@@ -4,24 +4,24 @@
     padding-right: 1.5rem;
   }
 
-  .venue-card {
-    grid-template-columns: 1.2fr 1fr;
-  }
-
   .language-picker {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .names-block {
-    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-    align-items: center;
-    justify-items: center;
   }
 }
 
 @media (max-width: 719px) {
+  .site-shell {
+    width: min(72vw, 440px);
+    padding: 0.8rem 0 2rem;
+    background: rgba(255, 250, 242, 0.12);
+    border-color: rgba(135, 101, 47, 0.08);
+    border-radius: 0;
+    box-shadow: none;
+  }
+
   .top-bar {
     padding-top: 0.6rem;
+    background: rgba(246, 243, 235, 0.82);
   }
 
   .brand-mini {
@@ -44,8 +44,30 @@
   .venue-section,
   .message-section,
   .save-date-section {
+    display: grid;
+    align-content: center;
+    min-height: 78vh;
+    min-height: 78svh;
     padding-top: 2.4rem;
     padding-bottom: 2.4rem;
+  }
+
+  .hero-illustration img {
+    max-width: min(28vw, 180px);
+  }
+
+  .hero-illustration::before,
+  .hero-illustration::after {
+    width: min(27vw, 150px);
+    height: min(27vw, 150px);
+  }
+
+  .hero-illustration::before {
+    left: 5%;
+  }
+
+  .hero-illustration::after {
+    right: 5%;
   }
 
   .day-meta,
@@ -59,15 +81,47 @@
   }
 
   .language-card {
-    padding: 2rem 1.2rem 1.5rem;
+    width: min(78vw, 360px);
+    padding: 1.75rem 1rem 1.25rem;
+  }
+
+  .language-logo {
+    width: min(32vw, 140px);
+  }
+
+  .language-picker {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.45rem;
+  }
+
+  .lang-option {
+    padding: 0.75rem 0.4rem;
+    font-size: 0.84rem;
   }
 
   .screen-title {
-    font-size: clamp(2.2rem, 10vw, 3rem);
+    font-size: clamp(1.65rem, 7vw, 2.3rem);
   }
 
   .invocation {
-    font-size: clamp(2.5rem, 15vw, 4rem);
+    font-size: clamp(1.3rem, 7vw, 2rem);
+  }
+
+  .names-block {
+    font-size: clamp(1.3rem, 5.5vw, 1.65rem);
+  }
+
+  .event-date,
+  .day-title {
+    font-size: clamp(1.3rem, 5.5vw, 1.7rem);
+  }
+
+  .venue-copy h3 {
+    font-size: clamp(1.4rem, 6vw, 1.8rem);
+  }
+
+  .save-date-dates {
+    font-size: clamp(1.45rem, 6vw, 2rem);
   }
 }
 

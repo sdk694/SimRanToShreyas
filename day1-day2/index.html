@@ -24,28 +24,28 @@
     <link rel="stylesheet" href="../css/responsive.css" />
   </head>
   <body data-variant="day1-day2">
-    <div class="language-screen" id="language-screen" aria-live="polite">
+    <div class="language-screen" id="language-screen" aria-live="polite" aria-hidden="false">
       <div class="language-card">
         <img src="../assets/illustrations/ganesha.png" alt="Lord Ganesha image" class="logo-mark language-logo" />
-        <p class="screen-title" id="lang-screen-title" data-i18n="langScreenTitle">A Celebration of Togetherness</p>
+        <h1 class="screen-title" id="lang-screen-title" data-i18n="langScreenTitle">A Celebration of Togetherness</h1>
         <p class="screen-subtitle" id="lang-screen-subtitle" data-i18n="langScreenSubtitle">Choose your preferred language</p>
         <div class="language-picker" role="group" aria-label="Select language">
-          <button type="button" class="lang-option" data-lang="en">English</button>
-          <button type="button" class="lang-option" data-lang="hi">हिन्दी</button>
-          <button type="button" class="lang-option" data-lang="mr">मराठी</button>
+          <button type="button" class="lang-option" data-lang="en" aria-pressed="true">English</button>
+          <button type="button" class="lang-option" data-lang="hi" aria-pressed="false">हिन्दी</button>
+          <button type="button" class="lang-option" data-lang="mr" aria-pressed="false">मराठी</button>
         </div>
       </div>
     </div>
 
-    <main class="site-shell" id="site-shell" hidden>
+    <main class="site-shell" id="site-shell" tabindex="-1" hidden>
       <header class="top-bar">
         <div class="brand-mini">
           <img src="../assets/logo/ss-logo.png" alt="Shreyas and Simran monogram" />
         </div>
         <nav class="language-switcher" aria-label="Language switcher">
-          <button type="button" data-lang="en" class="switch-btn is-active">EN</button>
-          <button type="button" data-lang="hi" class="switch-btn">हिं</button>
-          <button type="button" data-lang="mr" class="switch-btn">मर</button>
+          <button type="button" data-lang="en" class="switch-btn is-active" aria-pressed="true">EN</button>
+          <button type="button" data-lang="hi" class="switch-btn" aria-pressed="false">हिं</button>
+          <button type="button" data-lang="mr" class="switch-btn" aria-pressed="false">मर</button>
         </nav>
       </header>
 
@@ -61,7 +61,7 @@
       <section class="identity-section reveal" id="identity-section">
         <div class="section-ribbon" data-i18n="identityLabel">Shreyas &amp; Simran</div>
         <div class="identity-logo-wrap">
-          <img src="../assets/logo/ss-logo.png" alt="S and S wedding monogram" class="identity-logo" />
+          <img src="../assets/logo/ss-logo.png" alt="S and S wedding monogram" class="identity-logo" loading="lazy" decoding="async" />
         </div>
       </section>
 
@@ -82,19 +82,19 @@
           <p class="event-venue" data-i18n="venueShort">Pushp Vatika Resort &amp; Lawns, Panvel.</p>
         </div>
         <div class="botanical-divider" aria-hidden="true">
-          <img src="../assets/illustrations/botanical.svg" alt="" />
+          <img src="../assets/illustrations/botanical.svg" alt="" loading="lazy" decoding="async" />
         </div>
       </section>
 
       <section class="celebrations-section reveal" id="celebrations-section">
-        <div class="section-heading" data-i18n="eventTitle">Wedding Celebrations</div>
+        <h2 class="section-heading" data-i18n="eventTitle">Wedding Celebrations</h2>
 
         <div class="day-panel day-panel--day1" data-variant-hidden="day2">
           <div class="day-meta">
             <span class="day-tag" data-i18n="day1CardHeading">Day 1</span>
             <p class="calendar-date" data-i18n="day1Date">1 February 2027</p>
           </div>
-          <div class="day-title" data-i18n="day1Title">The Celebrations Begin</div>
+          <h3 class="day-title" data-i18n="day1Title">The Celebrations Begin</h3>
           <p class="day-location" data-i18n="day1LocationLabel">Temple Lawn</p>
           <div class="event-list" id="day1-event-list"></div>
         </div>
@@ -104,17 +104,17 @@
             <span class="day-tag" data-i18n="day2CardHeading">Day 2</span>
             <p class="calendar-date" data-i18n="day2Date">2 February 2027</p>
           </div>
-          <div class="day-title" data-i18n="day2Title">The Wedding Day</div>
+          <h3 class="day-title" data-i18n="day2Title">The Wedding Day</h3>
           <p class="day-location" data-i18n="day2LocationLabel">Glass House Banquet Hall</p>
           <div class="event-list" id="day2-event-list"></div>
         </div>
       </section>
 
       <section class="venue-section reveal" id="venue-section">
-        <div class="section-heading" data-i18n="venueTitle">Venue Experience</div>
+        <h2 class="section-heading" data-i18n="venueTitle">Venue Experience</h2>
         <div class="venue-card">
           <div class="venue-illustration">
-            <img src="../assets/illustrations/resort.svg" alt="Botanical resort illustration" />
+            <img src="../assets/illustrations/resort.svg" alt="Botanical resort illustration" loading="lazy" decoding="async" />
           </div>
           <div class="venue-copy">
             <p class="label" data-i18n="venueLabel">Venue</p>
@@ -147,8 +147,8 @@
 
       <section class="save-date-section reveal" id="save-date-section">
         <div class="save-date-shell">
-          <img src="../assets/logo/ss-logo.png" alt="S and S monogram" class="save-date-logo" />
-          <img src="../assets/illustrations/mandap.svg" alt="" class="save-date-mandap" aria-hidden="true" />
+          <img src="../assets/logo/ss-logo.png" alt="S and S monogram" class="save-date-logo" loading="lazy" decoding="async" />
+          <img src="../assets/illustrations/mandap.svg" alt="" class="save-date-mandap" aria-hidden="true" loading="lazy" decoding="async" />
           <p class="save-date-title" data-i18n="saveDateTitle">SAVE THE DATE</p>
           <p class="save-date-dates" id="save-date-dates" data-i18n="saveDateDates">01 &amp; 02 FEBRUARY 2027</p>
           <p class="save-date-names" data-i18n="saveDateNames">SHREYAS &amp; SIMRAN</p>

@@ -4,9 +4,18 @@ window.InvitationLanguage = {
 
   getSavedLanguage: function () {
     try {
-      return sessionStorage.getItem(this.KEY) || this.defaultLanguage;
+      const savedLanguage = sessionStorage.getItem(this.KEY);
+      return ["en", "hi", "mr"].includes(savedLanguage) ? savedLanguage : this.defaultLanguage;
     } catch (error) {
       return this.defaultLanguage;
+    }
+  },
+
+  hasSavedLanguage: function () {
+    try {
+      return ["en", "hi", "mr"].includes(sessionStorage.getItem(this.KEY));
+    } catch (error) {
+      return false;
     }
   },
 

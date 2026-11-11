@@ -25,10 +25,8 @@ html {
 
 body {
   margin: 0;
-  background:
-    radial-gradient(circle at top, rgba(23, 111, 112, 0.12), transparent 35%),
-    linear-gradient(180deg, rgba(255,255,255,0.42), rgba(233, 223, 202, 0.72)),
-    var(--ivory);
+  isolation: isolate;
+  background-color: var(--ivory);
   color: var(--charcoal);
   line-height: 1.6;
   overflow-x: hidden;
@@ -40,12 +38,23 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
+  z-index: -1;
   pointer-events: none;
   background:
     radial-gradient(circle at 10% 18%, rgba(23, 111, 112, 0.08), transparent 18%),
     radial-gradient(circle at 82% 22%, rgba(193, 160, 107, 0.12), transparent 18%),
-    linear-gradient(transparent, rgba(255,255,255,0.10));
+    linear-gradient(transparent, rgba(255,255,255,0.10)),
+    url("../assets/images/wedding-background.png") center center / auto 100vh no-repeat;
   opacity: 0.95;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 251, 245, 0.04), rgba(255, 251, 245, 0.1));
 }
 
 img {
@@ -67,9 +76,7 @@ button {
   inset: 0;
   display: grid;
   place-items: center;
-  background:
-    linear-gradient(160deg, rgba(246, 243, 235, 0.98), rgba(220, 233, 229, 0.96)),
-    radial-gradient(circle at center, rgba(23, 111, 112, 0.1), transparent 35%);
+  background: rgba(255, 250, 242, 0.14);
   z-index: 30;
   transition: opacity 0.6s ease, visibility 0.6s ease;
 }
@@ -81,9 +88,9 @@ button {
 }
 
 .language-card {
-  width: min(92vw, 500px);
+  width: min(92vw, 440px);
   padding: 2.5rem 2rem 2rem;
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 252, 246, 0.78);
   border: 1px solid rgba(135, 101, 47, 0.26);
   border-radius: 30px;
   box-shadow: 0 24px 60px rgba(70, 57, 34, 0.08), inset 0 1px 0 rgba(255,255,255,0.45);
@@ -152,10 +159,12 @@ button {
 }
 
 .site-shell {
-  width: min(100%, 980px);
+  position: relative;
+  z-index: 1;
+  width: min(100%, 440px);
   margin: 0 auto;
   padding: 1.1rem 1rem 4rem;
-  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(247,241,231,0.62));
+  background: rgba(255, 250, 242, 0.3);
   border: 1px solid rgba(135, 101, 47, 0.14);
   border-radius: 34px;
   box-shadow: 0 28px 80px rgba(35, 52, 54, 0.08);
@@ -171,7 +180,7 @@ button {
   gap: 1rem;
   padding: 0.85rem 0 0.25rem;
   backdrop-filter: blur(12px);
-  background: rgba(246, 243, 235, 0.86);
+  background: rgba(246, 243, 235, 0.76);
   border-bottom: 1px solid rgba(23, 111, 112, 0.16);
 }
 
@@ -245,7 +254,7 @@ section {
 }
 
 .hero-illustration {
-  width: min(80vw, 660px);
+  width: min(100%, 400px);
   margin: 0 auto;
   display: grid;
   place-items: center;
@@ -292,7 +301,7 @@ section {
 .invocation {
   text-align: center;
   margin: 1.25rem 0 0.25rem;
-  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  font-size: clamp(1.6rem, 7vw, 2.7rem);
   font-weight: 600;
   color: var(--charcoal);
   letter-spacing: 0.04em;
@@ -364,7 +373,7 @@ section {
   display: grid;
   gap: 0.3rem;
   margin: 1.1rem 0 1.3rem;
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(1.8rem, 5vw, 2.7rem);
   line-height: 1.05;
   text-align: center;
 }
@@ -374,7 +383,7 @@ section {
 }
 
 .event-date {
-  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  font-size: clamp(1.4rem, 3vw, 2rem);
   font-weight: 600;
 }
 
@@ -443,8 +452,8 @@ section {
 }
 
 .day-title {
-  margin-bottom: 0.5rem;
-  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
 }
 
 .day-location {
@@ -485,7 +494,7 @@ section {
 }
 
 .section-heading {
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.12em;

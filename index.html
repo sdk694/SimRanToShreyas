@@ -12,7 +12,7 @@
         min-height: 100vh;
         display: grid;
         place-items: center;
-        background: #f6f3eb;
+        background: #f6f3eb url("assets/images/wedding-background.png") center / auto 100vh repeat-y;
         color: #27383a;
         font-family: "DM Sans", sans-serif;
       }
@@ -24,6 +24,11 @@
         color: #176f70;
         text-decoration: none;
         font-weight: 600;
+      }
+      @media (max-width: 719px) {
+        body {
+          background-size: auto 100vh;
+        }
       }
     </style>
   </head>

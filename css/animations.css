@@ -11,17 +11,169 @@
   filter: blur(0);
 }
 
+.hero-section.is-visible .hero-illustration img {
+  animation: ganeshaReveal 1.2s cubic-bezier(0.2, 0.75, 0.2, 1) both, gentleFloat 7s 1.2s ease-in-out infinite;
+}
+
+.invitation-section.is-visible .name {
+  animation: nameReveal 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) both;
+}
+
+.invitation-section.is-visible .name:last-child {
+  animation-delay: 0.18s;
+}
+
+.identity-section.is-visible .identity-logo,
+.save-date-section.is-visible .save-date-logo {
+  animation: logoReveal 1s ease-out both;
+}
+
+.botanical-divider img,
+.save-date-mandap {
+  transform-origin: center bottom;
+  animation: botanicalSway 7s ease-in-out infinite;
+}
+
+.save-date-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.save-date-shell::after {
+  content: "";
+  position: absolute;
+  inset: -20% auto -20% -55%;
+  width: 35%;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(255, 246, 216, 0.42), transparent);
+  transform: skewX(-18deg);
+  animation: goldShimmer 8s ease-in-out infinite;
+}
+
+.petal-field {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.petal {
+  position: absolute;
+  top: -8vh;
+  left: var(--petal-left, 5%);
+  width: 16px;
+  height: 22px;
+  border-radius: 80% 0 80% 0;
+  background: linear-gradient(145deg, rgba(248, 193, 204, 0.8), rgba(218, 125, 146, 0.48));
+  opacity: 0;
+  animation: petalFall var(--petal-duration, 20s) linear infinite;
+  animation-delay: var(--petal-delay, -3s);
+}
+
+.petal:nth-child(even) {
+  width: 9px;
+  height: 13px;
+}
+
 .event-item {
+  animation: none;
+}
+
+.event-item.is-visible {
   animation: fadeInUp 0.75s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
-.event-item:nth-child(2) { animation-delay: 0.08s; }
-.event-item:nth-child(3) { animation-delay: 0.16s; }
-.event-item:nth-child(4) { animation-delay: 0.24s; }
+.event-item:nth-child(2).is-visible { animation-delay: 0.08s; }
+.event-item:nth-child(3).is-visible { animation-delay: 0.16s; }
+.event-item:nth-child(4).is-visible { animation-delay: 0.24s; }
+
+@keyframes ganeshaReveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes nameReveal {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+    letter-spacing: 0.12em;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: inherit;
+  }
+}
+
+@keyframes logoReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes botanicalSway {
+  0%, 100% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes goldShimmer {
+  0%, 45% {
+    left: -55%;
+  }
+  75%, 100% {
+    left: 125%;
+  }
+}
+
+@keyframes petalFall {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -5vh, 0) rotate(0deg);
+  }
+  10% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0.38;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(36px, 112vh, 0) rotate(300deg);
+  }
+}
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .petal {
+    animation: petalFall var(--petal-duration, 20s) linear var(--petal-delay, -3s) infinite !important;
   }
 
   .reveal,
@@ -29,7 +181,6 @@
   .site-shell {
     opacity: 1 !important;
     transform: none !important;
-    animation: none !important;
-    transition: none !important;
+    filter: none !important;
   }
 }

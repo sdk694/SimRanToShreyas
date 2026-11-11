@@ -1,497 +1,432 @@
 # PRODUCT REQUIREMENTS DOCUMENT (PRD)
-# SHREYAS & SIMRAN – DIGITAL WEDDING INVITATION
+# S&S – SHREYAS & SIMRAN WEDDING INVITATION WEBSITE
 
-Version: 2.0
+Version: 3.0
 Status: Ready for Development
-Wedding Dates: 01–02 February 2027
 
 GROOM: Shreyas Kulkarni
 BRIDE: Simran Bhambhani
 
-VENUE: Pushp Vatika Resort & Lawns
-LOCATION: Village Pale Budruk, Panvel Vavanja Road,
-Panvel, Raigad District, Navi Mumbai, Maharashtra.
+WEDDING DATES:
+01–02 February 2027
 
-GOOGLE MAPS:
-https://maps.app.goo.gl/ADJ2fM5mtyUa5VXr6
+VENUE:
+Pushp Vatika Resort & Lawns
+Panvel, Maharashtra, India
 
 TECHNOLOGY:
-HTML5 + CSS3 + Vanilla JavaScript
+HTML5 + CSS3 + Vanilla JavaScript + SVG
 
 HOSTING:
 GitHub Pages
 
+PRIMARY DEVICE:
+Mobile phones
 
-====================================================
+
+==================================================
 1. PRODUCT VISION
-====================================================
+==================================================
 
-1.1 OBJECTIVE
+Create an exceptionally beautiful, premium,
+mobile-first digital wedding invitation.
 
-Create an exceptionally beautiful, premium, interactive
-and multilingual digital wedding invitation for Shreyas
-Kulkarni and Simran Bhambhani.
+The website should feel like an interactive,
+animated luxury Indian wedding invitation card.
 
-The website must feel like an immersive digital wedding
-experience rather than a conventional wedding invitation.
+The experience should combine:
 
-The experience should unfold through scrolling, animations,
-illustrations, typography and elegant transitions.
+- Traditional Hindu wedding aesthetics.
+- Botanical luxury.
+- Elegant wedding typography.
+- Beautiful CSS animations.
+- Premium visual storytelling.
+- An immersive scrolling experience.
 
-The design must reflect the coming together of two families:
-one Marathi and the other North Indian, celebrating a
-traditional Hindu wedding.
+The website must be designed primarily for mobile.
 
-The experience should be sophisticated, romantic,
-culturally meaningful and visually memorable.
+It should feel as though the guest is opening
+a beautifully designed digital wedding invitation
+on their smartphone.
 
-1.2 PRODUCT GOALS
+IMPORTANT DESIGN DECISION:
 
-- Create a premium digital wedding invitation.
-- Support English, Hindi and Marathi.
-- Support two distinct guest categories.
-- Provide two primary shareable invitation URLs.
-- Create an immersive scrolling experience.
-- Showcase all relevant wedding ceremonies.
-- Provide venue information and Google Maps navigation.
-- Deliver an exceptional mobile-first experience.
-- Integrate the existing S&S wedding logo.
-- Host the complete website using GitHub Pages.
+I WILL PROVIDE A BACKGROUND IMAGE.
 
-1.3 SUCCESS CRITERIA
+THIS IMAGE MUST BE USED AS THE PRIMARY BACKGROUND
+THROUGHOUT THE ENTIRE WEBSITE.
 
-- Two functional guest variants.
-- Three fully supported languages.
-- Two primary invitation URLs.
-- No RSVP functionality.
-- Responsive mobile, tablet and desktop layouts.
-- Correct WhatsApp previews.
-- Lighthouse performance target: 90+.
-- Lighthouse accessibility target: 90+.
-- No backend or database dependencies.
+The entire website must be designed around this image.
+
+Do not independently design unrelated backgrounds
+for individual sections.
+
+The supplied image must establish the overall
+visual identity and atmosphere of the website.
+
+All website content, typography, illustrations,
+decorative elements and animations must complement it.
 
 
-====================================================
-2. BRAND IDENTITY AND CREATIVE DIRECTION
-====================================================
+==================================================
+2. PRIMARY DESIGN REQUIREMENT:
+SUPPLIED IMAGE AS THE WEBSITE BACKGROUND
+==================================================
 
-2.1 EXISTING WEDDING LOGO
+2.1 BACKGROUND IMAGE
 
-The couple already has an approved S&S wedding logo.
+I will provide a background image separately.
 
-The supplied logo is the primary brand identity asset.
+Expected location:
 
-Logo characteristics:
+assets/images/wedding-background.jpg
 
-- Intertwined ornamental S lettering.
-- Metallic champagne-gold finish.
-- Sage-green botanical leaves.
-- Delicate floral detailing.
-- Transparent PNG background.
-- Original dimensions: 500 x 500 pixels.
+The actual file extension may be different.
 
-MANDATORY REQUIREMENTS:
+The supplied image must be used as the continuous
+visual background throughout the invitation.
 
-- Preserve the original logo artwork.
-- Do not redesign or recreate the logo.
-- Do not distort its proportions.
-- Maintain its transparent background.
-- Build the website's visual identity around it.
-- Use it in the wedding identity section.
-- Use it in the invitation composition.
-- Use it in the Save the Date section.
-- Adapt it for the WhatsApp preview image.
+It should remain visually consistent while guests
+scroll through the entire website.
 
-The logo must remain the visual anchor of the website.
+Do not replace it with:
+
+- Stock images.
+- Generic gradients.
+- Unrelated floral backgrounds.
+- Different backgrounds for every section.
+
+The supplied image is the primary design asset.
 
 
-2.2 DESIGN THEME
+2.2 BACKGROUND IMPLEMENTATION
 
-THEME: BOTANICAL LUXURY
+Use CSS to create a continuous background experience.
 
-The website should combine:
+Suggested implementation:
 
-- Premium Indian wedding stationery.
-- Elegant garden wedding aesthetics.
-- Botanical editorial design.
-- Traditional Hindu wedding motifs.
-- Romantic floral illustrations.
-- Sophisticated typography.
+- Fixed background layer.
+- Full viewport coverage.
+- Background-size: cover.
+- Appropriate background-position.
+- Background-repeat: no-repeat.
+- Responsive positioning.
+- Subtle overlays only when required for readability.
 
-The overall experience must feel timeless,
-elegant, warm and luxurious.
+The image must never be stretched or distorted.
 
-Avoid:
+Do not use background-size: 100% 100%.
 
-- Generic wedding templates.
-- Bright red and orange dominating the design.
-- Excessive gradients.
-- Cartoon illustrations.
-- Cluttered compositions.
-- Excessive gold usage.
-- Unnecessary animations.
+Use object positioning and responsive CSS
+to control the visible image composition.
 
 
-2.3 COLOUR PALETTE
+2.3 MOBILE BACKGROUND OPTIMISATION
 
-Primary Background:
-Warm Ivory - #FAF8F1
+Mobile is the primary experience.
 
-Secondary Background:
-Soft Champagne - #F1EADB
+The background must be specifically adapted
+for portrait mobile screens.
 
-Botanical Green:
-Sage - #A5B29A
+Target aspect ratios:
 
-Deep Botanical Green:
-#596B51
+- 9:16
+- 9:19.5
+- 9:20
+- 9:21
 
-Muted Olive:
-#85876C
+Use responsive media queries and background positioning.
 
-Champagne Gold:
-#C5A46D
+The image must:
 
-Antique Gold:
-#A98549
+- Cover the available viewport.
+- Maintain its original proportions.
+- Avoid awkward cropping of important elements.
+- Remain visually balanced behind the content.
+- Work across different iPhone and Android screens.
 
-Primary Text:
-Warm Charcoal - #393A34
+If necessary, use CSS background-position
+adjustments at different breakpoints.
 
-Secondary Text:
-Muted Olive Grey - #77786B
+If the supplied image has important visual details
+near its edges, ensure they are not unnecessarily cropped.
 
-The final colour palette should be harmonised
-with the supplied wedding logo.
-
-
-2.4 TYPOGRAPHY
-
-English Headings:
-Cormorant Garamond.
-
-English Body:
-DM Sans or Lato.
-
-Hindi:
-Noto Serif Devanagari.
-
-Marathi:
-Noto Serif Devanagari.
-
-The couple's names must be the primary
-typographic focal point.
-
-Ensure excellent readability and proper
-Devanagari rendering on mobile devices.
+The agent must inspect the actual image before
+choosing the background positioning strategy.
 
 
-2.5 ILLUSTRATION STYLE
+2.4 CONTENT READABILITY
 
-Use delicate, elegant and consistent illustrations.
+The background must remain visible.
 
-Required visual elements:
+Do not cover it with large opaque content cards.
 
-- Lord Ganesha.
-- Botanical leaves and vines.
-- Floral arrangements.
-- Traditional lamps and diyas.
-- Wedding mandap.
-- Garden pathways.
-- Resort landscape.
-- Decorative wedding arches.
-- Glass-house banquet architecture.
+Use:
 
-Illustrations should look hand-drawn or watercolor-inspired.
+- Subtle translucent overlays.
+- Soft text shadows where appropriate.
+- Delicate gradients only when necessary.
+- Elegant typography.
+- Minimal decorative separators.
 
-Do not mix unrelated illustration styles.
+The goal is to preserve the beauty of the
+original background image while ensuring
+all invitation information is readable.
 
 
-====================================================
-3. GUEST CATEGORIES AND WEBSITE VARIANTS
-====================================================
+==================================================
+3. BRAND IDENTITY
+==================================================
 
-There will be TWO invitation variants.
+The existing S&S wedding logo must be integrated.
+
+The logo is an ornamental combination of
+intertwined S lettering, champagne gold and
+botanical detailing.
+
+Requirements:
+
+- Preserve the original logo.
+- Do not recreate it.
+- Maintain aspect ratio.
+- Preserve transparency.
+- Do not apply destructive filters.
+- Use it as a prominent design element.
+
+Expected location:
+
+assets/logo/ss-logo.png
+
+The supplied background image and S&S logo
+must work together as one visual identity.
+
+Colour palette should complement the background.
+
+Suggested supporting colours:
+
+Warm Ivory: #FAF8F1
+Champagne Gold: #C5A46D
+Antique Gold: #A98549
+Sage Green: #A5B29A
+Deep Green: #596B51
+Warm Charcoal: #393A34
+
+These are supporting colours, not mandatory
+replacement colours for the supplied image.
+
+
+==================================================
+4. MOBILE-FIRST DESIGN STRATEGY
+==================================================
+
+MOBILE IS THE PRIMARY PRODUCT EXPERIENCE.
+
+The website should be designed for smartphones first.
+
+Primary target widths:
+
+- 360px
+- 375px
+- 390px
+- 393px
+- 402px
+- 430px
+
+Also support:
+
+- 320px
+- 480px
+- 768px
+- Desktop screens.
+
+Mobile design requirements:
+
+- Portrait-oriented compositions.
+- Full-width visual experience.
+- Large elegant typography.
+- Appropriate vertical spacing.
+- Touch-friendly interactions.
+- Smooth vertical scrolling.
+- No horizontal scrolling.
+- No unnecessary navigation bars.
+- No desktop-style multi-column layouts.
+- No tiny event information.
+- No overlapping decorations.
+
+The experience should feel like a digital invitation,
+not a conventional corporate website.
+
+DESKTOP BEHAVIOUR:
+
+Desktop support is secondary.
+
+Use a beautiful centered invitation composition
+with an appropriate maximum width.
+
+Do not unnecessarily stretch the invitation
+across a large desktop monitor.
+
+
+==================================================
+5. GUEST VARIANTS
+==================================================
+
+There will be TWO invitation links.
 
 VARIANT A: DAY 1 + DAY 2
 
+URL:
+
+/day1-day2/
+
 Audience:
-Extremely close relatives and selected family members.
+Extremely close relatives invited to both days.
 
-Must display:
-
-- 01 February 2027 celebrations.
-- 02 February 2027 wedding ceremonies.
-- All event timings.
-- All venue information.
-- Google Maps navigation.
+Display:
+- Day 1 celebrations.
+- Day 2 wedding ceremonies.
+- Relevant venue information.
 
 VARIANT B: DAY 2 ONLY
+
+URL:
+
+/day2/
 
 Audience:
 Guests invited exclusively to the wedding day.
 
-Must display:
+Display:
+- Day 2 wedding ceremonies.
+- Day 2 venue information.
 
-- 02 February 2027 ceremonies.
-- Event timings.
-- Venue information.
-- Google Maps navigation.
+CRITICAL:
 
-CRITICAL BUSINESS RULE:
+Day 1 information must never appear
+in the Day 2-only invitation.
 
-Day 1 events must NEVER appear in the Day 2-only variant.
+Both variants must use the same codebase.
 
-This includes:
-
-- Event cards.
-- Event navigation.
-- Event descriptions.
-- Event summaries.
-- Any other visible references to Day 1.
-
-Both variants must share the same website implementation,
-design system and animation engine.
+Use a central JavaScript configuration
+to determine which events are displayed.
 
 
-====================================================
-4. URL AND LANGUAGE ARCHITECTURE
-====================================================
+==================================================
+6. LANGUAGE REQUIREMENTS
+==================================================
 
-4.1 PRIMARY URLS
+Support three languages:
 
-URL 1:
-https://YOUR-GITHUB-PAGES-DOMAIN/day1-day2/
+1. English.
+2. Hindi.
+3. Marathi.
 
-Audience:
-Day 1 + Day 2 guests.
+When a guest opens either invitation link,
+display an elegant language selection screen.
 
-URL 2:
-https://YOUR-GITHUB-PAGES-DOMAIN/day2/
-
-Audience:
-Day 2-only guests.
-
-Only TWO primary shareable URLs should exist.
-
-
-4.2 LANGUAGE SELECTION
-
-When a guest opens either URL, display a language
-selection screen.
-
-Available languages:
-
-1. English
-2. हिन्दी
-3. मराठी
-
-After selecting a language, the entire website
-must load in that language.
-
-Language selection must apply to:
-
-- Headings.
-- Invitation text.
-- Event names.
-- Event descriptions.
-- Timings.
-- Venue information.
-- Navigation.
-- Buttons.
-- Closing message.
-- Save the Date.
-
-Provide a language-switching option throughout
-the website.
-
-
-4.3 LANGUAGE PERSISTENCE
-
-- Preserve the selected language during navigation.
-- Use sessionStorage or an equivalent lightweight method.
-- Do not repeatedly ask for language selection.
-- Allow guests to switch languages.
-- Language switching must never change the guest variant.
-
-Example:
-
-A Day 2-only guest switching from English to Marathi
-must continue seeing only Day 2 events.
-
-
-4.4 WHATSAPP PREVIEW
-
-Both URLs must have appropriate Open Graph metadata.
-
-Required metadata:
-
-- og:title
-- og:description
-- og:image
-- og:type
-- og:url
-- Twitter card metadata.
-
-Day 1 + Day 2 preview:
-
-Shreyas & Simran | Wedding Celebrations
-01–02 February 2027
-
-Day 2-only preview:
-
-Shreyas & Simran | Wedding Invitation
-02 February 2027
-
-Use the S&S logo and botanical design
-for the preview image.
-
-IMPORTANT:
-
-WhatsApp crawlers generally do not execute JavaScript.
-
-Therefore, metadata must exist in the initial HTML
-of each invitation URL.
-
-Do not generate Open Graph metadata dynamically
-using JavaScript.
-
-
-====================================================
-5. WEBSITE INFORMATION ARCHITECTURE
-====================================================
-
-The website must be a continuous,
-vertically scrollable storytelling experience.
-
-SECTION 0: LANGUAGE SELECTION
-
-SECTION 1: AUSPICIOUS BEGINNING
-
-SECTION 2: WEDDING IDENTITY
-
-SECTION 3: FORMAL INVITATION
-
-SECTION 4: WEDDING CELEBRATIONS
-
-SECTION 5: VENUE EXPERIENCE
-
-SECTION 6: MESSAGE FROM THE COUPLE
-
-SECTION 7: SAVE THE DATE
-
-
-====================================================
-6. DETAILED WEBSITE SECTION REQUIREMENTS
-====================================================
-
-6.1 SECTION 0 – LANGUAGE SELECTION
-
-OBJECTIVE:
-
-Allow guests to select their preferred language.
-
-DESIGN:
-
-- Warm ivory background.
-- S&S logo or subtle botanical artwork.
-- Elegant serif typography.
-- Three language options.
-- Minimal champagne-gold ornamentation.
-
-HEADING:
-
-A Celebration of Togetherness
-
-LANGUAGE OPTIONS:
+Language options:
 
 English
 हिन्दी
 मराठी
 
-INTERACTION:
+After selection:
 
-On selection:
+- Load the invitation in the selected language.
+- Preserve the selected language during the session.
+- Allow language switching.
+- Translate all visible website content.
+- Maintain the selected guest variant.
 
-1. Store the selected language.
-2. Load the selected language.
-3. Transition into the main invitation.
-4. Preserve the selected guest variant.
+Use:
 
-The experience should feel like opening
-a premium wedding invitation.
+- Noto Serif Devanagari for Hindi and Marathi.
+- Cormorant Garamond for English headings.
+- DM Sans for English body text.
+
+All translations must be culturally appropriate.
+
+Do not leave any visible interface text untranslated.
 
 
-6.2 SECTION 1 – AUSPICIOUS BEGINNING
+==================================================
+7. WEBSITE STORYTELLING AND SECTION FLOW
+==================================================
 
-OBJECTIVE:
+The entire website must remain one continuous
+scrollable invitation.
 
-Introduce the invitation through an auspicious
-Hindu tradition.
+All sections must share the supplied background image.
 
-VISUAL:
+Do not create separate background designs
+for individual sections.
 
-- Warm ivory background.
-- Beautiful Lord Ganesha illustration.
-- Delicate botanical elements.
-- Champagne-gold detailing.
 
-TEXT:
+SECTION 0: LANGUAGE SELECTION
+
+Purpose:
+Allow guests to select their language.
+
+Visual:
+
+- Supplied wedding background.
+- S&S logo.
+- Elegant language options.
+- Subtle gold decoration.
+
+Heading:
+
+A Celebration of Togetherness.
+
+Interaction:
+
+Guest selects a language and proceeds
+to the invitation.
+
+
+SECTION 1: LORD GANESHA
+
+Display an elegant Lord Ganesha illustration.
+
+Text:
 
 ॐ श्री गणेशाय नमः
 
-Om Shree Ganeshaya Namaha
+Animation:
 
-ANIMATION:
+- Ganesha gradually fades into view.
+- Decorative elements reveal themselves.
+- Invocation appears elegantly.
+- Subtle floral particles or petals may appear.
 
-1. Background fades in.
-2. Ganesha illustration gradually appears.
-3. Invocation fades in beneath it.
-4. A subtle scroll indicator appears.
-
-Avoid aggressive zooming or spinning.
+Maintain a traditional and auspicious atmosphere.
 
 
-6.3 SECTION 2 – WEDDING IDENTITY
+SECTION 2: WEDDING LOGO
 
-OBJECTIVE:
+Display the supplied S&S logo prominently.
 
-Introduce the S&S wedding identity.
+Animation:
 
-VISUAL:
+- Smooth logo reveal.
+- Subtle gold shimmer.
+- Botanical leaf movement.
+- Elegant ornamental transitions.
 
-- Botanical background.
-- Existing S&S logo as the central focal point.
-- Delicate leaves and floral ornamentation.
-- Champagne-gold details.
-
-ANIMATION:
-
-1. Transition from the Ganesha section.
-2. Logo gradually reveals.
-3. Botanical leaves appear around the logo.
-4. Subtle background movement creates depth.
-
-The logo must remain visually prominent.
-
-Do not distort or recreate it.
+Do not distort the logo.
 
 
-6.4 SECTION 3 – FORMAL INVITATION
+SECTION 3: FORMAL INVITATION
 
-OBJECTIVE:
+Display:
 
-Formally invite guests to the wedding celebrations.
+Together with their families,
 
-PROPOSED ENGLISH COPY:
-
-"Together with their families,
-
-Shreyas Kulkarni
+SHREYAS KULKARNI
 
 &
 
-Simran Bhambhani
+SIMRAN BHAMBHANI
 
 cordially invite you to join them in celebrating
 their joyous union.
@@ -502,84 +437,52 @@ of togetherness with you.
 
 01–02 February 2027
 
-Pushp Vatika Resort & Lawns, Panvel."
+Pushp Vatika Resort & Lawns, Panvel.
 
-For Day 2-only guests, focus the invitation
-on 02 February 2027.
+For Day 2-only guests, focus on 02 February 2027.
 
-DESIGN:
-
-- Editorial-style typography.
-- Couple names prominently displayed.
-- Elegant botanical borders.
-- Spacious composition.
-- Champagne-gold details.
-
-The couple's names must be the central highlight.
-
-Provide natural Hindi and Marathi translations.
+The names must be the primary focal point.
 
 
-6.5 SECTION 4 – WEDDING CELEBRATIONS
-
-OBJECTIVE:
-
-Display the wedding schedule clearly.
-
-This section must dynamically adapt
-to the selected guest category.
-
-
-VARIANT A: DAY 1 + DAY 2
+SECTION 4: WEDDING CELEBRATIONS
 
 
 DAY 1
-
-DATE:
 01 FEBRUARY 2027
 
-TITLE:
+Title:
 The Celebrations Begin
 
-LOCATION:
+Location:
 Temple Lawn,
 Pushp Vatika Resort & Lawns.
 
-EVENTS:
+Events:
 
-1. Pooja.
-2. Family Get-Together.
-3. Engagement Ceremony.
-4. Celebration Party.
+- Pooja.
+- Family Get-Together.
+- Engagement Ceremony.
+- Celebration Party.
 
 Suggested illustrations:
 
-Pooja:
-Traditional diya or temple illustration.
-
-Family Get-Together:
-Botanical gathering illustration.
-
-Engagement:
-Elegant ring illustration.
-
-Celebration Party:
-Floral lights and celebration illustration.
+Pooja: Traditional diya.
+Family: Floral gathering motif.
+Engagement: Elegant ring.
+Party: Celebration lights and floral details.
 
 
 DAY 2
-
-DATE:
 02 FEBRUARY 2027
 
-TITLE:
+Title:
 The Wedding Day
 
-LOCATION:
+Location:
 Glass House Banquet Hall,
 Pushp Vatika Resort & Lawns.
 
-EVENTS:
+Events:
 
 07:00 AM onwards:
 Wedding Vidhi.
@@ -593,129 +496,64 @@ Mantra Pushpanjali.
 Following the ceremonies:
 Reception.
 
-Do not invent missing event timings.
+Do not invent missing timings.
 
-The exact ceremony sequence and reception timing
-will be confirmed later.
-
-
-VARIANT B: DAY 2 ONLY
-
-Display ONLY:
-
-02 FEBRUARY 2027
-
-The Wedding Day
-
-07:00 AM onwards:
-Wedding Vidhi.
-
-11:30 AM:
-Varmala.
-
-11:30 AM:
-Mantra Pushpanjali.
-
-Following the ceremonies:
-Reception.
-
-Do not display Day 1 events or references.
+Day 2-only guests must see only Day 2.
 
 
-EVENT DESIGN:
+EVENT PRESENTATION:
 
-- Event cards reveal individually on scroll.
-- Each event has a suitable illustration.
-- Date headings use elegant typography.
-- Botanical dividers separate events.
-- Timings remain easy to read.
-- Mobile cards stack vertically.
-- Avoid excessive decorative containers.
+Use elegant vertical storytelling.
+
+Each event should appear progressively
+as the guest scrolls.
+
+Avoid generic rectangular cards.
+
+Prefer:
+
+- Decorative illustrations.
+- Fine gold dividers.
+- Elegant date typography.
+- Subtle floral separators.
+- Timeline-inspired layouts.
 
 
-6.6 SECTION 5 – VENUE EXPERIENCE
+SECTION 5: VENUE EXPERIENCE
 
-OBJECTIVE:
+Venue:
+Pushp Vatika Resort & Lawns.
 
-Showcase the venue and help guests navigate
-to the wedding location.
-
-VENUE:
-
-Pushp Vatika Resort & Lawns
-
-ADDRESS:
+Address:
 
 Village Pale Budruk,
 Panvel Vavanja Road,
 Panvel, Raigad District,
 Navi Mumbai, Maharashtra.
 
-LOCATION CONTEXT:
-
-Approximately 7 km from Panvel city centre
-and approximately 20 minutes from Panvel Railway Station.
-
-GOOGLE MAPS:
+Google Maps:
 
 https://maps.app.goo.gl/ADJ2fM5mtyUa5VXr6
 
+Display:
 
-VISUAL DESIGN:
+Day 1: Temple Lawn.
+Day 2: Glass House Banquet Hall.
 
-Create a beautiful illustrated landscape inspired
-by the actual resort.
+Use venue-inspired illustrations.
 
-Include:
+Add a button:
 
-- Green lawns.
-- Garden pathways.
-- Resort surroundings.
-- Floral wedding decorations.
-- Wedding mandap.
-- Decorative arches.
-- Glass-house banquet architecture.
-- Warm ambient lighting.
+FIND YOUR WAY TO THE CELEBRATIONS
 
-The illustration should create a feeling
-of arriving at the wedding destination.
-
-Do not invent unverified architectural details.
+The button must open Google Maps.
 
 
-VENUE INFORMATION:
+SECTION 6: MESSAGE FROM THE COUPLE
 
-DAY 1:
+Display:
 
-Temple Lawn,
-Pushp Vatika Resort & Lawns.
-
-DAY 2:
-
-Glass House Banquet Hall,
-Pushp Vatika Resort & Lawns.
-
-
-NAVIGATION:
-
-Display a prominent CTA:
-
-Find Your Way to the Celebrations
-
-On click, open the supplied Google Maps link.
-
-The Maps link must work on mobile and desktop.
-
-
-6.7 SECTION 6 – MESSAGE FROM THE COUPLE
-
-OBJECTIVE:
-
-Create an emotional connection with guests.
-
-PROPOSED COPY:
-
-"Some moments become memories, and some
+Some moments become memories, and some
 memories become a lifetime.
 
 As we begin this beautiful journey together,
@@ -723,25 +561,14 @@ your presence and blessings would mean the
 world to us.
 
 We look forward to celebrating this special
-occasion with you and creating cherished memories."
+occasion with you and creating cherished memories.
 
 Provide Hindi and Marathi translations.
 
-DESIGN:
 
-- Soft ivory and botanical background.
-- Elegant serif typography.
-- Delicate floral animations.
-- Warm and intimate composition.
+SECTION 7: SAVE THE DATE
 
-
-6.8 SECTION 7 – SAVE THE DATE
-
-OBJECTIVE:
-
-Conclude the invitation with a memorable visual.
-
-CONTENT:
+Display:
 
 SAVE THE DATE
 
@@ -749,562 +576,411 @@ SAVE THE DATE
 
 SHREYAS & SIMRAN
 
-Pushp Vatika Resort & Lawns,
-Panvel, Maharashtra.
+Pushp Vatika Resort & Lawns, Panvel.
 
-DESIGN:
-
-- Full-screen botanical composition.
-- S&S logo.
-- Champagne-gold detailing.
-- Elegant date typography.
-- Delicate floral animation.
-
-For Day 2-only guests, display only:
+For Day 2-only guests:
 
 02 FEBRUARY 2027.
 
-Optional:
-Provide an Add to Calendar action.
-
-Day 1 + Day 2 guests receive both dates.
-
-Day 2-only guests receive only 02 February.
+End with an elegant floral and gold animation.
 
 
-====================================================
-7. MULTILINGUAL CONTENT REQUIREMENTS
-====================================================
+==================================================
+8. CSS ANIMATION REQUIREMENTS
+==================================================
 
-SUPPORTED LANGUAGES:
+THIS IS A MAJOR PRODUCT REQUIREMENT.
 
-1. English.
-2. Hindi.
-3. Marathi.
+The website must have rich, beautiful,
+wedding-appropriate CSS animations.
 
-All visible website content must be translated.
+The animation experience should be one of
+the defining characteristics of the website.
 
-Required translations:
+Use CSS3 as the primary animation technology.
 
-- Language selector.
-- Ganesha invocation.
-- Invitation heading.
-- Couple names.
-- Invitation message.
-- Event names.
-- Ceremony descriptions.
-- Event timings.
-- Venue information.
-- Maps CTA.
-- Couple's message.
-- Save the Date.
-- Navigation labels.
-
-IMPLEMENTATION:
-
-Maintain translations in a central JavaScript dictionary.
-
-Example:
-
-const translations = {
-  en: {
-    invitation: "Together with their families",
-    weddingDay: "The Wedding Day",
-    saveDate: "Save the Date"
-  },
-
-  hi: {
-    invitation: "...",
-    weddingDay: "...",
-    saveDate: "..."
-  },
-
-  mr: {
-    invitation: "...",
-    weddingDay: "...",
-    saveDate: "..."
-  }
-};
-
-This is illustrative.
-
-Complete translations must be implemented.
-
-TRANSLATION GUIDELINES:
-
-- Hindi must sound natural to North Indian guests.
-- Marathi must use natural Marathi wedding terminology.
-- Preserve cultural meaning.
-- Use correct Devanagari typography.
-- Ensure correct punctuation and spacing.
-- Never leave untranslated interface text.
+Use JavaScript only to trigger animations
+and coordinate scroll-based interactions.
 
 
-====================================================
-8. ANIMATION AND INTERACTION REQUIREMENTS
-====================================================
+8.1 WEDDING ANIMATION LIBRARY
 
-Animation is a core part of the experience.
+Implement the following animations:
 
-The website should change its visual behaviour
-as guests move through the scrolling experience.
+A. FLORAL ANIMATIONS
 
-TECHNOLOGY:
+- Floating flower petals.
+- Falling rose petals.
+- Gentle leaf movement.
+- Subtle floral reveal.
+- Botanical vine growth.
+- Flower opening animation.
 
-- Intersection Observer API.
-- CSS keyframes.
-- CSS transitions.
-- SVG animation.
-- CSS transforms.
-- Vanilla JavaScript.
+B. GOLD ANIMATIONS
 
-REQUIRED ANIMATIONS:
+- Subtle gold shimmer.
+- Metallic text reveal.
+- Elegant gold border drawing.
+- Fine golden sparkle.
+- Light passing over the wedding logo.
 
-1. Ganesha illustration reveal.
-2. Invocation text reveal.
-3. Wedding logo reveal.
-4. Botanical leaf movement.
-5. Invitation text reveal.
-6. Staggered event card reveal.
-7. Section background transitions.
-8. Subtle parallax.
-9. Venue illustration reveal.
-10. Save the Date animation.
+C. TYPOGRAPHY ANIMATIONS
 
-SCROLL BEHAVIOUR:
+- Letter-by-letter reveal.
+- Word-by-word fade-in.
+- Elegant heading reveal.
+- Vertical text reveal.
+- Smooth opacity transitions.
 
-- Reveal elements when they enter the viewport.
-- Use subtle staggered animations.
-- Avoid continuous expensive animations.
-- Avoid heavy mobile parallax.
-- Maintain smooth scrolling.
-- Ensure all content remains accessible.
+D. WEDDING DECORATIVE ANIMATIONS
 
-MOBILE ANIMATION:
+- Diya flame flickering.
+- Hanging decorative elements swaying.
+- Mandap elements revealing.
+- Floral garland movement.
+- Decorative arch reveal.
 
-Use simplified animations on mobile.
+E. SCROLL ANIMATIONS
+
+- Section fade-in.
+- Staggered event reveal.
+- Image and illustration reveal.
+- Background depth transitions.
+- Parallax movement.
+- Elegant section transitions.
+
+F. FINAL SCREEN
+
+- S&S logo reveal.
+- Gold shimmer.
+- Falling petals.
+- Date typography animation.
+- Gentle closing transition.
+
+
+8.2 ANIMATION BEHAVIOUR
+
+Animations must feel elegant and premium.
 
 Avoid:
 
-- Heavy blur effects.
-- Large continuous animations.
-- Excessive particle effects.
-- Complex multi-layer parallax.
+- Cartoon-like movement.
+- Excessive bouncing.
+- Flashing effects.
+- Distracting rotations.
+- Aggressive zooming.
+- Excessive simultaneous animations.
 
-ACCESSIBILITY:
+Use different animation styles for different
+sections so the experience feels carefully art-directed.
+
+
+8.3 TECHNICAL IMPLEMENTATION
+
+Use:
+
+- CSS @keyframes.
+- CSS transitions.
+- CSS transforms.
+- Intersection Observer API.
+- Vanilla JavaScript.
+- SVG animations where useful.
+
+Use Intersection Observer to trigger
+animations as elements enter the viewport.
+
+Use animation delays to create staggered reveals.
+
+Use transform and opacity wherever possible
+for smooth GPU-friendly animations.
+
+Do not run hundreds of continuous animations.
 
 Respect prefers-reduced-motion.
 
-When enabled:
-
-- Disable parallax.
-- Remove unnecessary movement.
-- Display content immediately.
-- Retain all website functionality.
+Ensure all content remains accessible
+when animations are disabled.
 
 
-====================================================
-9. TECHNICAL ARCHITECTURE
-====================================================
+==================================================
+9. BACKGROUND AND ANIMATION PERFORMANCE
+==================================================
 
-9.1 TECHNOLOGY STACK
+The supplied background image is the most
+important visual asset.
 
-Frontend:
-HTML5
-CSS3
-Vanilla JavaScript
-
-Graphics:
-SVG
-PNG
-WebP / AVIF
-
-Hosting:
-GitHub Pages
-
-Do not introduce React, Angular or Vue.
-
-No backend.
-No database.
-No authentication.
-No RSVP functionality.
-
-
-9.2 PROJECT STRUCTURE
-
-wedding-invitation/
-│
-├── index.html
-│
-├── day1-day2/
-│   └── index.html
-│
-├── day2/
-│   └── index.html
-│
-├── assets/
-│   ├── logo/
-│   │   └── ss-logo.png
-│   │
-│   ├── illustrations/
-│   │   ├── ganesha.svg
-│   │   ├── botanical.svg
-│   │   ├── mandap.svg
-│   │   └── resort.svg
-│   │
-│   ├── images/
-│   │   └── og-wedding.jpg
-│   │
-│   └── fonts/
-│
-├── css/
-│   ├── base.css
-│   ├── typography.css
-│   ├── layout.css
-│   ├── animations.css
-│   └── responsive.css
-│
-├── js/
-│   ├── app.js
-│   ├── language.js
-│   ├── translations.js
-│   ├── events.js
-│   └── animations.js
-│
-├── data/
-│   └── wedding-config.js
-│
-└── README.md
-
-
-9.3 CENTRAL CONFIGURATION
-
-Maintain wedding content in a central configuration.
-
-Example:
-
-const weddingConfig = {
-  groom: "Shreyas Kulkarni",
-  bride: "Simran Bhambhani",
-
-  weddingDates: {
-    day1: "2027-02-01",
-    day2: "2027-02-02"
-  },
-
-  venue: {
-    name: "Pushp Vatika Resort & Lawns",
-    mapsUrl:
-      "https://maps.app.goo.gl/ADJ2fM5mtyUa5VXr6"
-  },
-
-  variants: {
-    day1Day2: {
-      showDay1: true,
-      showDay2: true
-    },
-
-    day2: {
-      showDay1: false,
-      showDay2: true
-    }
-  }
-};
-
-This is illustrative.
-Include all required event and translation data.
-
-
-9.4 GITHUB PAGES
+Optimise it without damaging visual quality.
 
 Requirements:
 
-- Static website deployment.
-- HTTPS.
-- No server-side processing.
-- No database.
-- No API keys for the core experience.
-- Correct relative asset paths.
-- Direct access to both invitation URLs.
-- Working refresh behaviour.
-- Optimised assets.
+- Compress the image appropriately.
+- Preserve its original aspect ratio.
+- Avoid unnecessary repeated image downloads.
+- Avoid layout shifts.
+- Use responsive image techniques if needed.
+- Test background positioning on mobile.
 
-The website must work entirely on GitHub Pages.
+Do not place a large number of animated elements
+over the background.
+
+Use carefully selected animation layers.
+
+The background must remain visually dominant.
 
 
-====================================================
-10. RESPONSIVE DESIGN REQUIREMENTS
-====================================================
+==================================================
+10. WHATSAPP PREVIEW REQUIREMENTS
+==================================================
 
-MOBILE-FIRST DESIGN IS MANDATORY.
+Create two separate HTML entry points.
+
+Each must contain static Open Graph metadata.
+
+DAY 1 + DAY 2:
+
+Shreyas & Simran | Wedding Celebrations |
+01–02 February 2027.
+
+DAY 2 ONLY:
+
+Shreyas & Simran | Wedding Invitation |
+02 February 2027.
+
+Include:
+
+- og:title
+- og:description
+- og:image
+- og:type
+- og:url
+- Twitter card metadata.
+
+Use the supplied background image and S&S logo
+to create attractive social preview images.
+
+Metadata must exist in initial HTML.
+
+Do not generate metadata dynamically using JavaScript.
+
+
+==================================================
+11. TECHNICAL ARCHITECTURE
+==================================================
+
+Use ONLY:
+
+- HTML5.
+- CSS3.
+- Vanilla JavaScript.
+- SVG.
+
+No frameworks.
+
+No backend.
+
+No database.
+
+No build tools.
+
+No npm dependencies.
+
+Suggested structure:
+
+/
+|
+|-- index.html
+|
+|-- day1-day2/
+|   |-- index.html
+|
+|-- day2/
+|   |-- index.html
+|
+|-- assets/
+|   |-- logo/
+|   |   |-- ss-logo.png
+|   |
+|   |-- images/
+|   |   |-- wedding-background.jpg
+|   |   |-- og-day1-day2.jpg
+|   |   |-- og-day2.jpg
+|   |
+|   |-- illustrations/
+|   |   |-- ganesha.svg
+|   |   |-- botanical.svg
+|   |   |-- mandap.svg
+|   |
+|   |-- fonts/
+|
+|-- css/
+|   |-- base.css
+|   |-- background.css
+|   |-- typography.css
+|   |-- layout.css
+|   |-- animations.css
+|   |-- responsive.css
+|
+|-- js/
+|   |-- app.js
+|   |-- language.js
+|   |-- translations.js
+|   |-- events.js
+|   |-- animations.js
+|
+|-- data/
+|   |-- wedding-config.js
+|
+|-- .github/
+|   |-- workflows/
+|       |-- deploy.yml
+|
+|-- .nojekyll
+|
+|-- README.md
+
+
+==================================================
+12. GITHUB PAGES DEPLOYMENT
+==================================================
+
+The complete website must be deployable
+directly using GitHub Pages.
+
+Create:
+
+.github/workflows/deploy.yml
+
+The workflow must:
+
+- Trigger on push to main.
+- Support manual workflow_dispatch.
+- Use GitHub Actions.
+- Upload the static website.
+- Deploy to GitHub Pages.
+
+Use official actions:
+
+actions/checkout@v4
+actions/configure-pages@v5
+actions/upload-pages-artifact@v3
+actions/deploy-pages@v4
+
+Do not require npm installation or compilation.
+
+Include correct relative paths for nested URLs.
+
+Include .nojekyll.
+
+Ensure both invitation links work after deployment.
+
+
+==================================================
+13. ACCESSIBILITY AND PERFORMANCE
+==================================================
+
+Target:
+
+Lighthouse Performance: 90+
+Lighthouse Accessibility: 90+
+Lighthouse Best Practices: 90+
+Lighthouse SEO: 90+
+
+Requirements:
+
+- Mobile-first performance.
+- Optimised background image.
+- Lazy-load non-critical images.
+- Minimise JavaScript.
+- Avoid excessive DOM elements.
+- Avoid layout shifts.
+- Use semantic HTML.
+- Support keyboard navigation.
+- Provide accessible contrast.
+- Respect reduced motion.
+- Ensure readable text over background.
+
+
+==================================================
+14. TESTING AND ACCEPTANCE CRITERIA
+==================================================
+
+BACKGROUND:
+
+[ ] Supplied image is used throughout.
+[ ] Image is never distorted.
+[ ] Mobile portrait cropping is correct.
+[ ] Important image details remain visible.
+[ ] Text remains readable.
+[ ] Background does not flicker while scrolling.
 
 MOBILE:
 
-Support screen widths from 320px upwards.
-
-Requirements:
-
-- Single-column layout.
-- Large readable typography.
-- Touch-friendly controls.
-- No horizontal overflow.
-- Correct illustration scaling.
-- Lightweight animations.
-- Proper event card spacing.
-- Accessible language selection.
-- Visible Maps CTA.
-
-TABLET:
-
-- Adaptive illustrations.
-- Balanced whitespace.
-- Flexible layouts.
-- Responsive typography.
-
-DESKTOP:
-
-- Larger hero compositions.
-- Rich botanical backgrounds.
-- Two-column layouts where suitable.
-- More pronounced parallax.
-- Proper content width.
-
-The mobile experience must be intentionally designed,
-not simply scaled down from desktop.
-
-
-====================================================
-11. PERFORMANCE AND ACCESSIBILITY
-====================================================
-
-TARGET LIGHTHOUSE SCORES:
-
-Performance: 90+
-Accessibility: 90+
-Best Practices: 90+
-SEO: 90+
-
-PERFORMANCE REQUIREMENTS:
-
-- Optimise images.
-- Prefer SVG illustrations.
-- Lazy-load below-the-fold assets.
-- Preload only critical assets.
-- Avoid heavy animation libraries.
-- Avoid unnecessary JavaScript.
-- Prevent layout shifts.
-- Minimise external dependencies.
-- Support slower mobile networks.
-
-ACCESSIBILITY REQUIREMENTS:
-
-- Semantic HTML.
-- Correct heading hierarchy.
-- Descriptive alt text.
-- Keyboard navigation.
-- Visible focus states.
-- Adequate colour contrast.
-- Scalable typography.
-- Reduced-motion support.
-- Correct language attributes.
-- Accessible controls.
-
-
-====================================================
-12. TESTING AND ACCEPTANCE CRITERIA
-====================================================
-
-GUEST VARIANTS:
-
-[ ] Day 1 + Day 2 displays both days.
-[ ] Day 2-only displays only Day 2.
-[ ] No Day 1 information appears in Day 2-only.
-[ ] Both URLs work independently.
-
-LANGUAGES:
-
-[ ] English works throughout.
-[ ] Hindi works throughout.
-[ ] Marathi works throughout.
-[ ] Language switching works correctly.
-[ ] No untranslated text remains.
-[ ] Devanagari fonts render correctly.
-
-BRANDING:
-
-[ ] Original S&S logo is used.
-[ ] Logo proportions are preserved.
-[ ] Transparent background is maintained.
-[ ] Colours complement the logo.
-[ ] Botanical aesthetic is consistent.
-
-EVENTS:
-
-[ ] All event names are correct.
-[ ] Dates are correct.
-[ ] Timings are correct.
-[ ] Day 1 location is correct.
-[ ] Day 2 location is correct.
-[ ] Reception timing is verified.
-
-NAVIGATION:
-
-[ ] Google Maps opens correctly.
-[ ] Venue address is correct.
-[ ] Mobile navigation works.
-[ ] Calendar links are correct if implemented.
+[ ] 320px layout works.
+[ ] 360px layout works.
+[ ] 375px layout works.
+[ ] 390px layout works.
+[ ] 430px layout works.
+[ ] No horizontal scrolling.
+[ ] No overlapping elements.
 
 ANIMATIONS:
 
-[ ] Scroll animations work.
-[ ] Mobile animations are optimised.
-[ ] Reduced-motion setting works.
-[ ] Website works without animations.
+[ ] Petal animations work.
+[ ] Gold shimmer works.
+[ ] Logo animation works.
+[ ] Scroll reveals work.
+[ ] Event animations work.
+[ ] Mobile performance remains smooth.
+[ ] Reduced-motion support works.
 
-WHATSAPP:
+FUNCTIONALITY:
 
-[ ] Both previews work.
-[ ] Titles are correct.
-[ ] Descriptions are correct.
-[ ] Preview images load.
-[ ] Correct guest variant opens.
+[ ] Both guest variants work.
+[ ] English works.
+[ ] Hindi works.
+[ ] Marathi works.
+[ ] Language switching works.
+[ ] Maps navigation works.
+[ ] WhatsApp metadata is correct.
 
-DEVICE TESTING:
+DEPLOYMENT:
 
-[ ] iPhone Safari.
-[ ] Android Chrome.
-[ ] Windows Chrome.
-[ ] Windows Edge.
-[ ] Desktop Firefox.
-[ ] Tablet browsers.
-
-
-====================================================
-13. OUT OF SCOPE
-====================================================
-
-The following features are not required:
-
-- RSVP functionality.
-- Guest login.
-- Password protection.
-- Guest database.
-- Admin dashboard.
-- Backend infrastructure.
-- Online payments.
-- Guest-specific personalisation.
-- Couple photographs.
-- Autoplay music.
-- Separate websites for each language.
+[ ] GitHub workflow exists.
+[ ] Workflow deploys successfully.
+[ ] GitHub Pages works.
+[ ] Nested paths work.
+[ ] HTTPS works.
 
 
-====================================================
-14. DEVELOPMENT PHASES
-====================================================
+==================================================
+15. FINAL PRODUCT PRINCIPLE
+==================================================
 
-PHASE 1: BRAND FOUNDATION
+The supplied background image is the foundation
+of the entire digital wedding invitation.
 
-- Inspect existing S&S logo.
-- Establish colour palette.
-- Finalise typography.
-- Define illustration style.
-- Establish design tokens.
+The S&S logo is the central brand identity.
 
-PHASE 2: EXPERIENCE DESIGN
+The website must feel like an animated,
+luxurious Indian wedding invitation.
 
-- Language selection.
-- Ganesha opening.
-- Wedding identity.
-- Invitation.
-- Event sections.
-- Venue experience.
-- Couple's message.
-- Save the Date.
+The guest should experience:
 
-PHASE 3: FRONTEND DEVELOPMENT
+- An auspicious beginning.
+- Beautiful wedding branding.
+- Elegant invitation typography.
+- Rich wedding animations.
+- Clear event information.
+- A beautiful closing moment.
 
-- HTML structure.
-- CSS design system.
-- JavaScript functionality.
-- Guest variants.
-- Translation system.
-
-PHASE 4: ANIMATION
-
-- Scroll detection.
-- Section transitions.
-- Logo reveal.
-- Botanical animation.
-- Mobile optimisation.
-
-PHASE 5: QUALITY ASSURANCE
-
-- Language testing.
-- Guest variant testing.
-- Mobile testing.
-- Desktop testing.
-- WhatsApp preview testing.
-- Lighthouse audit.
-
-PHASE 6: DEPLOYMENT
-
-- GitHub Pages configuration.
-- Final URL verification.
-- HTTPS verification.
-- WhatsApp testing.
-- Final acceptance testing.
-
-
-====================================================
-15. FINAL PRODUCT EXPERIENCE
-====================================================
-
-EXPECTED GUEST JOURNEY:
-
-1. Guest receives a WhatsApp invitation.
-2. Guest sees a beautiful preview.
-3. Guest opens the invitation.
-4. Guest selects English, Hindi or Marathi.
-5. Lord Ganesha appears with the auspicious invocation.
-6. The S&S wedding identity is revealed.
-7. The couple's invitation appears.
-8. Guest explores the relevant ceremonies.
-9. Guest discovers the wedding venue.
-10. Guest reads the couple's message.
-11. The experience concludes with Save the Date.
-
-The website should feel like a premium digital
-wedding keepsake.
-
-It must be elegant, culturally meaningful,
-visually immersive and effortless to navigate.
-
-
-====================================================
-16. FINAL DESIGN PRINCIPLE
-====================================================
-
-The S&S wedding logo is the foundation of the
-entire visual identity.
-
-Extend its visual language throughout the website:
-
-- Champagne-gold accents.
-- Sage-green botanical elements.
-- Warm ivory backgrounds.
-- Delicate floral illustrations.
-- Elegant Indian wedding motifs.
-
-The resort landscape should become a recurring
-visual element, creating the feeling of travelling
-into the wedding celebration.
-
-The final experience should communicate:
+MOBILE FIRST.
+BACKGROUND IMAGE FIRST.
+ANIMATION RICH.
+BOTANICAL LUXURY.
 
 TWO FAMILIES.
 TWO CULTURES.
 ONE BEAUTIFUL CELEBRATION.
 
 SHREYAS & SIMRAN
-
 01–02 FEBRUARY 2027.

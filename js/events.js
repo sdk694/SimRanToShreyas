@@ -1,10 +1,10 @@
 window.weddingEvents = {
   'day1-day2': {
     day1: [
-      { key: 'eventPooja', time: 'timeReception' },
-      { key: 'eventFamilyGetTogether', time: 'timeReception' },
-      { key: 'eventEngagement', time: 'timeReception' },
-      { key: 'eventCelebrationParty', time: 'timeReception' }
+      { key: 'eventPooja' },
+      { key: 'eventFamilyGetTogether' },
+      { key: 'eventEngagement' },
+      { key: 'eventCelebrationParty' }
     ],
     day2: [
       { key: 'eventWeddingVidhi', time: 'timeWeddingVidhi' },

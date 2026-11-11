@@ -35,11 +35,17 @@ All visible text is stored in `js/translations.js` under the `en`, `hi`, and `mr
 
 ## Logo replacement
 
-Replace the existing logo in:
+The supplied logo is kept at:
 
 - `assets/logo/ss-logo.png`
 
-Keep the original transparent PNG background and preserve the proportions recommended in the PRD.
+The continuous wedding artwork is kept at:
+
+- `assets/images/wedding-background.png`
+
+Both files are used as supplied. The social preview generator uses these files and never recreates or overwrites the logo.
+
+To regenerate the Open Graph preview images, run `python generate_assets.py` in an environment with Pillow installed. This optional step is not part of the static site build or deployment.
 
 ## Event timing updates
 

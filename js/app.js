@@ -15,8 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-    document.querySelectorAll('.switch-btn').forEach(function (button) {
-      button.classList.toggle('is-active', button.dataset.lang === language);
+    document.querySelectorAll('[data-lang]').forEach(function (button) {
+      const isSelected = button.dataset.lang === language;
+      button.classList.toggle('is-active', button.classList.contains('switch-btn') && isSelected);
+      button.setAttribute('aria-pressed', String(isSelected));
     });
 
     const saveDateDates = document.getElementById('save-date-dates');
@@ -42,7 +44,10 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   function renderEvents(currentVariant, language) {
-    const eventSet = window.weddingEvents[currentVariant] || window.weddingEvents['day1-day2'];
+    const eventSet = window.weddingEvents[currentVariant];
+    if (!eventSet) {
+      throw new Error('No wedding event configuration found for variant: ' + currentVariant);
+    }
     const lists = [
       document.getElementById('day1-event-list'),
       document.getElementById('day2-event-list')
@@ -67,10 +72,12 @@ document.addEventListener('DOMContentLoaded', function () {
         item.className = 'event-item reveal';
         const title = document.createElement('h4');
         title.textContent = window.translations[language][event.key] || event.key;
-        const time = document.createElement('p');
-        time.textContent = window.translations[language][event.time] || event.time;
         item.appendChild(title);
-        item.appendChild(time);
+        if (event.time) {
+          const time = document.createElement('p');
+          time.textContent = window.translations[language][event.time] || event.time;
+          item.appendChild(time);
+        }
         list.appendChild(item);
       });
     });
@@ -84,10 +91,12 @@ document.addEventListener('DOMContentLoaded', function () {
     translate(language);
     if (languageScreen) {
       languageScreen.classList.add('is-hidden');
+      languageScreen.setAttribute('aria-hidden', 'true');
     }
     if (siteShell) {
       siteShell.hidden = false;
       siteShell.classList.add('is-visible');
+      siteShell.focus({ preventScroll: true });
     }
   }
 
@@ -103,12 +112,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  if (window.sessionStorage && sessionStorage.getItem(window.InvitationLanguage.KEY)) {
+  if (window.InvitationLanguage.hasSavedLanguage()) {
     showInvitation(languageToUse);
   } else {
     translate(languageToUse);
     if (languageScreen) {
       languageScreen.classList.remove('is-hidden');
+      languageScreen.setAttribute('aria-hidden', 'false');
     }
     if (siteShell) {
       siteShell.hidden = true;
