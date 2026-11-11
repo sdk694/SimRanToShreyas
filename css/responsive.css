@@ -52,6 +52,20 @@
     padding-bottom: 2.4rem;
   }
 
+  .identity-section {
+    min-height: 0;
+    margin-bottom: 0.8rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .invitation-section {
+    min-height: 0;
+    margin-bottom: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 1.5rem;
+  }
+
   .hero-illustration img {
     max-width: min(28vw, 180px);
   }
