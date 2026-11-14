@@ -9,7 +9,6 @@ window.weddingEvents = {
     day2: [
       { key: 'eventWeddingVidhi', time: 'timeWeddingVidhi' },
       { key: 'eventVarmala', time: 'timeVarmala' },
-      { key: 'eventMantraPushpanjali', time: 'timeMantra' },
       { key: 'eventReception', time: 'timeReception' }
     ]
   },
@@ -17,7 +16,6 @@ window.weddingEvents = {
     day2: [
       { key: 'eventWeddingVidhi', time: 'timeWeddingVidhi' },
       { key: 'eventVarmala', time: 'timeVarmala' },
-      { key: 'eventMantraPushpanjali', time: 'timeMantra' },
       { key: 'eventReception', time: 'timeReception' }
     ]
   }
